@@ -12,4 +12,5 @@ services:
     image: markoshust/ssh
     ports:
       - "22:22"
-    volumes: *appvolumes
+    volumes:
+      - appdata:/var/www/html:rw

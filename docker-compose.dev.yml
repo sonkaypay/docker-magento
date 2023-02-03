@@ -4,6 +4,7 @@ services:
   app:
     volumes: &appvolumes
       - ./src/nginx.conf.sample:/var/www/html/nginx.conf:cached
+      # - ./php-magento2-module:/var/www/html/app/code/Kaypay/Payment:ro
 
   phpfpm:
     volumes: *appvolumes
